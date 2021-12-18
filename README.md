@@ -10,7 +10,7 @@ Well, I've been free & crazily bored up so thought to learn Python and tried to 
 
 #### Deployment? Here Lad
 
-Let's Generate the String Session first!
+Let's proceed upto the String Session generation.
 
 ```bash
 
