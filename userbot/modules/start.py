@@ -1,10 +1,6 @@
 from .. import *
 from telethon import *
-import time
-import subprocess
 import os
-import datetime
-from datetime import datetime
 
 
 @client.on(events.NewMessage(outgoing=True, pattern=f'{HANDLER}purge'))
