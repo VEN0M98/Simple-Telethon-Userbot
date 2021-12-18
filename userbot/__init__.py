@@ -2,6 +2,8 @@ from telethon import TelegramClient
 from decouple import config
 import logging
 import time
+from config import *
+
 
 API_ID = config("API_ID", default=None, cast=int)
 API_HASH = config("API_HASH", default=None)
