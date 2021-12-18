@@ -9,9 +9,9 @@ from telethon.sync import TelegramClient
 
 print(" Go to my.telegram.org & gather the APP_ID and API_HASH variables, enter them here.\n");
 
-APP_ID = int(input("Enter APP ID here: "))
+API_ID = int(input("Enter APP ID here: "))
 API_HASH = input("Enter API HASH here: ")
 
-with TelegramClient(StringSession(), APP_ID, API_HASH) as client:
+with TelegramClient(StringSession(), API_ID, API_HASH) as client:
     print(client.session.save())
     client.send_message("me", client.session.save())
