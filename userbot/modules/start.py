@@ -24,4 +24,4 @@ async def handler(event):
          idd +=2
   except Exception as e:
      print(str(e))
-     
+     pass
