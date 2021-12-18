@@ -8,4 +8,13 @@ API_HASH = config("API_HASH", default=None)
 BOT_TOKEN = config("BOT_TOKEN", default=None)
 SESSION = config("SESSION", default=None)
 
-bot = TelegramClient('ub', API_ID, API_HASH).start(bot_token=BOT_TOKEN) 
+with TelegramClient(StringSession(SESSION), API_ID, API_HASH) as client:
+   string = client.session.save()
+   
+client.start() 
+
+async def main():
+        await client.connect()   
+   
+client.loop.run_until_complete(main())
+
