@@ -1,6 +1,6 @@
 import glob
 from pathlib import Path
-from . import bot
+from . import client
 import sys
 import logging
 import importlib
@@ -22,7 +22,7 @@ def load_plugins(plugin_name):
     load.logger = logging.getLogger(plugin_name)
     spec.loader.exec_module(load)
     sys.modules["userbot.modules." + plugin_name] = load
- 
+    print("Successfully loaded all plugins ...")
 
 print("Started..!")
 
