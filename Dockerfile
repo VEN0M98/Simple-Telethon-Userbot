@@ -1,8 +1,8 @@
-FROM jaaat4u/Simple-Telethon-Userbot
+FROM python:slim-buster
 
 # Repo Clone
 
-RUN git clone https://github.com/jaaat4u/Simple-Telethon-Userbot.git /root/userbot
+RUN git clone https://github.com/jaaat4u/Simple-Telethon-Userbot /root/userbot
 
 # Workdir 
 
